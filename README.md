@@ -1,1 +1,2 @@
-# Job Discovery Search demo
+# ACME Engineering Job Discovery
+Powered by Sitecore Search
