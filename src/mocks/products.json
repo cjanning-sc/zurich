@@ -1,0 +1,13 @@
+[{
+  "sku": 121212,
+  "name": "product 1",
+  "url": "https://google.com",
+  "price": 10.00,
+  "image_url": "https://www.riggsandporter.com/pub/media/reflektion/u/s/us_mk8386_black.jpeg"
+}, {
+  "sku": 3343434,
+  "name": "product 2",
+  "url": "https://google.com",
+  "price": 15.00,
+  "image_url": "https://www.riggsandporter.com/pub/media/reflektion/u/s/us_mk8386_black.jpeg"
+}]

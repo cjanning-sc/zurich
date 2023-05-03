@@ -1,0 +1,861 @@
+[
+    {
+        "number_of_products": 204,
+        "display_name": "Category",
+        "value": [
+            {
+                "count": 1,
+                "text": "$100 & Under",
+                "id": "facet_idJDEwMCAmIFVuZGVy",
+                "in_content": "product"
+            },
+            {
+                "count": 1,
+                "text": "$14.98 SWEATERS",
+                "id": "facet_idJDE0Ljk4IFNXRUFURVJT",
+                "in_content": "product"
+            },
+            {
+                "count": 1,
+                "text": "$19",
+                "id": "facet_idJDE5",
+                "in_content": "product"
+            },
+            {
+                "count": 1,
+                "text": "$19.98 Or Less Clearance Event",
+                "id": "facet_idJDE5Ljk4IE9yIExlc3MgQ2xlYXJhbmNlIEV2ZW50",
+                "in_content": "product"
+            },
+            {
+                "count": 1,
+                "text": "$19.98 ZENERGY",
+                "id": "facet_idJDE5Ljk4IFpFTkVSR1k=",
+                "in_content": "product"
+            },
+            {
+                "count": 3,
+                "text": "$19.99",
+                "id": "facet_idJDE5Ljk5",
+                "in_content": "product"
+            },
+            {
+                "count": 1,
+                "text": "$25 & Under",
+                "id": "facet_idJDI1ICYgVW5kZXI=",
+                "in_content": "product"
+            },
+            {
+                "count": 2,
+                "text": "$29 & Up Bottoms",
+                "id": "facet_idJDI5ICYgVXAgQm90dG9tcw==",
+                "in_content": "product"
+            },
+            {
+                "count": 2,
+                "text": "$29 Long-Sleeve Layering Tee",
+                "id": "facet_idJDI5IExvbmctU2xlZXZlIExheWVyaW5nIFRlZQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 3,
+                "text": "$29.99",
+                "id": "facet_idJDI5Ljk5",
+                "in_content": "product"
+            }
+        ],
+        "facetType": "category_names",
+        "values": [
+            {
+                "count": 1,
+                "text": "$100 & Under",
+                "id": "facet_idJDEwMCAmIFVuZGVy",
+                "in_content": "product",
+                "index": 0,
+                "selected": false
+            },
+            {
+                "count": 1,
+                "text": "$14.98 SWEATERS",
+                "id": "facet_idJDE0Ljk4IFNXRUFURVJT",
+                "in_content": "product",
+                "index": 1,
+                "selected": false
+            },
+            {
+                "count": 1,
+                "text": "$19",
+                "id": "facet_idJDE5",
+                "in_content": "product",
+                "index": 2,
+                "selected": false
+            },
+            {
+                "count": 1,
+                "text": "$19.98 Or Less Clearance Event",
+                "id": "facet_idJDE5Ljk4IE9yIExlc3MgQ2xlYXJhbmNlIEV2ZW50",
+                "in_content": "product",
+                "index": 3,
+                "selected": false
+            },
+            {
+                "count": 1,
+                "text": "$19.98 ZENERGY",
+                "id": "facet_idJDE5Ljk4IFpFTkVSR1k=",
+                "in_content": "product",
+                "index": 4,
+                "selected": false
+            },
+            {
+                "count": 3,
+                "text": "$19.99",
+                "id": "facet_idJDE5Ljk5",
+                "in_content": "product",
+                "index": 5,
+                "selected": false
+            },
+            {
+                "count": 1,
+                "text": "$25 & Under",
+                "id": "facet_idJDI1ICYgVW5kZXI=",
+                "in_content": "product",
+                "index": 6,
+                "selected": false
+            },
+            {
+                "count": 2,
+                "text": "$29 & Up Bottoms",
+                "id": "facet_idJDI5ICYgVXAgQm90dG9tcw==",
+                "in_content": "product",
+                "index": 7,
+                "selected": false
+            },
+            {
+                "count": 2,
+                "text": "$29 Long-Sleeve Layering Tee",
+                "id": "facet_idJDI5IExvbmctU2xlZXZlIExheWVyaW5nIFRlZQ==",
+                "in_content": "product",
+                "index": 8,
+                "selected": false
+            },
+            {
+                "count": 3,
+                "text": "$29.99",
+                "id": "facet_idJDI5Ljk5",
+                "in_content": "product",
+                "index": 9,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "number_of_products": 204,
+        "display_name": "Color",
+        "value": [
+            {
+                "count": 69,
+                "text": "Wild Poppy",
+                "id": "facet_idV2lsZCBQb3BweQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 66,
+                "text": "Black",
+                "id": "facet_idQmxhY2s=",
+                "in_content": "product"
+            },
+            {
+                "count": 20,
+                "text": "Jasper",
+                "id": "facet_idSmFzcGVy",
+                "in_content": "product"
+            },
+            {
+                "count": 19,
+                "text": "Spiced Bordeaux",
+                "id": "facet_idU3BpY2VkIEJvcmRlYXV4",
+                "in_content": "product"
+            },
+            {
+                "count": 17,
+                "text": "Cranberry Spice",
+                "id": "facet_idQ3JhbmJlcnJ5IFNwaWNl",
+                "in_content": "product"
+            },
+            {
+                "count": 13,
+                "text": "Boysenberry",
+                "id": "facet_idQm95c2VuYmVycnk=",
+                "in_content": "product"
+            },
+            {
+                "count": 12,
+                "text": "Classic Navy",
+                "id": "facet_idQ2xhc3NpYyBOYXZ5",
+                "in_content": "product"
+            },
+            {
+                "count": 11,
+                "text": "Deep Red",
+                "id": "facet_idRGVlcCBSZWQ=",
+                "in_content": "product"
+            },
+            {
+                "count": 11,
+                "text": "Ecru",
+                "id": "facet_idRWNydQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 11,
+                "text": "Spiced Red",
+                "id": "facet_idU3BpY2VkIFJlZA==",
+                "in_content": "product"
+            }
+        ],
+        "facetType": "colors",
+        "values": [
+            {
+                "count": 69,
+                "text": "Wild Poppy",
+                "id": "facet_idV2lsZCBQb3BweQ==",
+                "in_content": "product",
+                "index": 0,
+                "selected": true
+            },
+            {
+                "count": 66,
+                "text": "Black",
+                "id": "facet_idQmxhY2s=",
+                "in_content": "product",
+                "index": 1,
+                "selected": false
+            },
+            {
+                "count": 20,
+                "text": "Jasper",
+                "id": "facet_idSmFzcGVy",
+                "in_content": "product",
+                "index": 2,
+                "selected": false
+            },
+            {
+                "count": 19,
+                "text": "Spiced Bordeaux",
+                "id": "facet_idU3BpY2VkIEJvcmRlYXV4",
+                "in_content": "product",
+                "index": 3,
+                "selected": false
+            },
+            {
+                "count": 17,
+                "text": "Cranberry Spice",
+                "id": "facet_idQ3JhbmJlcnJ5IFNwaWNl",
+                "in_content": "product",
+                "index": 4,
+                "selected": false
+            },
+            {
+                "count": 13,
+                "text": "Boysenberry",
+                "id": "facet_idQm95c2VuYmVycnk=",
+                "in_content": "product",
+                "index": 5,
+                "selected": false
+            },
+            {
+                "count": 12,
+                "text": "Classic Navy",
+                "id": "facet_idQ2xhc3NpYyBOYXZ5",
+                "in_content": "product",
+                "index": 6,
+                "selected": false
+            },
+            {
+                "count": 11,
+                "text": "Deep Red",
+                "id": "facet_idRGVlcCBSZWQ=",
+                "in_content": "product",
+                "index": 7,
+                "selected": false
+            },
+            {
+                "count": 11,
+                "text": "Ecru",
+                "id": "facet_idRWNydQ==",
+                "in_content": "product",
+                "index": 8,
+                "selected": false
+            },
+            {
+                "count": 11,
+                "text": "Spiced Red",
+                "id": "facet_idU3BpY2VkIFJlZA==",
+                "in_content": "product",
+                "index": 9,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "number_of_products": 204,
+        "display_name": "new_arrivals",
+        "value": [
+            {
+                "count": 160,
+                "text": "1",
+                "id": "facet_idMQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 44,
+                "text": "0",
+                "id": "facet_idMA==",
+                "in_content": "product"
+            }
+        ],
+        "facetType": "derived_new_arrivals",
+        "values": [
+            {
+                "count": 160,
+                "text": "1",
+                "id": "facet_idMQ==",
+                "in_content": "product",
+                "index": 0,
+                "selected": false
+            },
+            {
+                "count": 44,
+                "text": "0",
+                "id": "facet_idMA==",
+                "in_content": "product",
+                "index": 1,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "number_of_products": 112,
+        "display_name": "neckline",
+        "value": [
+            {
+                "count": 33,
+                "text": "COLLAR",
+                "id": "facet_idQ09MTEFS",
+                "in_content": "product"
+            },
+            {
+                "count": 21,
+                "text": "V-NECK",
+                "id": "facet_idVi1ORUNL",
+                "in_content": "product"
+            },
+            {
+                "count": 18,
+                "text": "SCOOP",
+                "id": "facet_idU0NPT1A=",
+                "in_content": "product"
+            },
+            {
+                "count": 11,
+                "text": "BATEAU",
+                "id": "facet_idQkFURUFV",
+                "in_content": "product"
+            },
+            {
+                "count": 9,
+                "text": "MOCKNECK",
+                "id": "facet_idTU9DS05FQ0s=",
+                "in_content": "product"
+            },
+            {
+                "count": 5,
+                "text": "HOOD",
+                "id": "facet_idSE9PRA==",
+                "in_content": "product"
+            },
+            {
+                "count": 3,
+                "text": "BOAT",
+                "id": "facet_idQk9BVA==",
+                "in_content": "product"
+            },
+            {
+                "count": 3,
+                "text": "SPLIT NECK",
+                "id": "facet_idU1BMSVQgTkVDSw==",
+                "in_content": "product"
+            },
+            {
+                "count": 3,
+                "text": "TURTLENECK",
+                "id": "facet_idVFVSVExFTkVDSw==",
+                "in_content": "product"
+            },
+            {
+                "count": 2,
+                "text": "CREW",
+                "id": "facet_idQ1JFVw==",
+                "in_content": "product"
+            }
+        ],
+        "facetType": "neckline",
+        "values": [
+            {
+                "count": 33,
+                "text": "COLLAR",
+                "id": "facet_idQ09MTEFS",
+                "in_content": "product",
+                "index": 0,
+                "selected": false
+            },
+            {
+                "count": 21,
+                "text": "V-NECK",
+                "id": "facet_idVi1ORUNL",
+                "in_content": "product",
+                "index": 1,
+                "selected": false
+            },
+            {
+                "count": 18,
+                "text": "SCOOP",
+                "id": "facet_idU0NPT1A=",
+                "in_content": "product",
+                "index": 2,
+                "selected": false
+            },
+            {
+                "count": 11,
+                "text": "BATEAU",
+                "id": "facet_idQkFURUFV",
+                "in_content": "product",
+                "index": 3,
+                "selected": false
+            },
+            {
+                "count": 9,
+                "text": "MOCKNECK",
+                "id": "facet_idTU9DS05FQ0s=",
+                "in_content": "product",
+                "index": 4,
+                "selected": false
+            },
+            {
+                "count": 5,
+                "text": "HOOD",
+                "id": "facet_idSE9PRA==",
+                "in_content": "product",
+                "index": 5,
+                "selected": false
+            },
+            {
+                "count": 3,
+                "text": "BOAT",
+                "id": "facet_idQk9BVA==",
+                "in_content": "product",
+                "index": 6,
+                "selected": false
+            },
+            {
+                "count": 3,
+                "text": "SPLIT NECK",
+                "id": "facet_idU1BMSVQgTkVDSw==",
+                "in_content": "product",
+                "index": 7,
+                "selected": false
+            },
+            {
+                "count": 3,
+                "text": "TURTLENECK",
+                "id": "facet_idVFVSVExFTkVDSw==",
+                "in_content": "product",
+                "index": 8,
+                "selected": false
+            },
+            {
+                "count": 2,
+                "text": "CREW",
+                "id": "facet_idQ1JFVw==",
+                "in_content": "product",
+                "index": 9,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "number_of_products": 204,
+        "display_name": "On sale",
+        "value": [
+            {
+                "count": 162,
+                "text": "T",
+                "id": "facet_idVA==",
+                "in_content": "product"
+            },
+            {
+                "count": 42,
+                "text": "F",
+                "id": "facet_idRg==",
+                "in_content": "product"
+            }
+        ],
+        "facetType": "on_sale",
+        "values": [
+            {
+                "count": 162,
+                "text": "T",
+                "id": "facet_idVA==",
+                "in_content": "product",
+                "index": 0,
+                "selected": false
+            },
+            {
+                "count": 42,
+                "text": "F",
+                "id": "facet_idRg==",
+                "in_content": "product",
+                "index": 1,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "number_of_products": 204,
+        "display_name": "Price",
+        "value": [
+            {
+                "count": 21,
+                "min": 0,
+                "text": "0 - 20",
+                "in_content": "product",
+                "max": 20,
+                "id": "facet_ideyJtYXgiOjIwLCJtaW4iOjB9"
+            },
+            {
+                "count": 41,
+                "min": 20,
+                "text": "20 - 30",
+                "in_content": "product",
+                "max": 30,
+                "id": "facet_ideyJtYXgiOjMwLCJtaW4iOjIwfQ=="
+            },
+            {
+                "count": 41,
+                "min": 30,
+                "text": "30 - 40",
+                "in_content": "product",
+                "max": 40,
+                "id": "facet_ideyJtYXgiOjQwLCJtaW4iOjMwfQ=="
+            },
+            {
+                "count": 27,
+                "min": 40,
+                "text": "40 - 50",
+                "in_content": "product",
+                "max": 50,
+                "id": "facet_ideyJtYXgiOjUwLCJtaW4iOjQwfQ=="
+            },
+            {
+                "count": 23,
+                "min": 50,
+                "text": "50 - 60",
+                "in_content": "product",
+                "max": 60,
+                "id": "facet_ideyJtYXgiOjYwLCJtaW4iOjUwfQ=="
+            },
+            {
+                "count": 18,
+                "min": 60,
+                "text": "60 - 70",
+                "in_content": "product",
+                "max": 70,
+                "id": "facet_ideyJtYXgiOjcwLCJtaW4iOjYwfQ=="
+            },
+            {
+                "count": 10,
+                "min": 70,
+                "text": "70 - 80",
+                "in_content": "product",
+                "max": 80,
+                "id": "facet_ideyJtYXgiOjgwLCJtaW4iOjcwfQ=="
+            },
+            {
+                "count": 5,
+                "min": 80,
+                "text": "80 - 90",
+                "in_content": "product",
+                "max": 90,
+                "id": "facet_ideyJtYXgiOjkwLCJtaW4iOjgwfQ=="
+            },
+            {
+                "count": 9,
+                "min": 90,
+                "text": "90 - 100",
+                "in_content": "product",
+                "max": 100,
+                "id": "facet_ideyJtYXgiOjEwMCwibWluIjo5MH0="
+            },
+            {
+                "count": 9,
+                "min": 100,
+                "text": "100 - 170",
+                "in_content": "product",
+                "max": 170,
+                "id": "facet_ideyJtYXgiOjE3MCwibWluIjoxMDB9"
+            }
+        ],
+        "facetType": "price",
+        "values": [
+            {
+                "count": 21,
+                "min": 0,
+                "text": "0 - 20",
+                "in_content": "product",
+                "max": 20,
+                "id": "facet_ideyJtYXgiOjIwLCJtaW4iOjB9",
+                "index": 0,
+                "selected": false
+            },
+            {
+                "count": 41,
+                "min": 20,
+                "text": "20 - 30",
+                "in_content": "product",
+                "max": 30,
+                "id": "facet_ideyJtYXgiOjMwLCJtaW4iOjIwfQ==",
+                "index": 1,
+                "selected": false
+            },
+            {
+                "count": 41,
+                "min": 30,
+                "text": "30 - 40",
+                "in_content": "product",
+                "max": 40,
+                "id": "facet_ideyJtYXgiOjQwLCJtaW4iOjMwfQ==",
+                "index": 2,
+                "selected": false
+            },
+            {
+                "count": 27,
+                "min": 40,
+                "text": "40 - 50",
+                "in_content": "product",
+                "max": 50,
+                "id": "facet_ideyJtYXgiOjUwLCJtaW4iOjQwfQ==",
+                "index": 3,
+                "selected": false
+            },
+            {
+                "count": 23,
+                "min": 50,
+                "text": "50 - 60",
+                "in_content": "product",
+                "max": 60,
+                "id": "facet_ideyJtYXgiOjYwLCJtaW4iOjUwfQ==",
+                "index": 4,
+                "selected": false
+            },
+            {
+                "count": 18,
+                "min": 60,
+                "text": "60 - 70",
+                "in_content": "product",
+                "max": 70,
+                "id": "facet_ideyJtYXgiOjcwLCJtaW4iOjYwfQ==",
+                "index": 5,
+                "selected": false
+            },
+            {
+                "count": 10,
+                "min": 70,
+                "text": "70 - 80",
+                "in_content": "product",
+                "max": 80,
+                "id": "facet_ideyJtYXgiOjgwLCJtaW4iOjcwfQ==",
+                "index": 6,
+                "selected": false
+            },
+            {
+                "count": 5,
+                "min": 80,
+                "text": "80 - 90",
+                "in_content": "product",
+                "max": 90,
+                "id": "facet_ideyJtYXgiOjkwLCJtaW4iOjgwfQ==",
+                "index": 7,
+                "selected": false
+            },
+            {
+                "count": 9,
+                "min": 90,
+                "text": "90 - 100",
+                "in_content": "product",
+                "max": 100,
+                "id": "facet_ideyJtYXgiOjEwMCwibWluIjo5MH0=",
+                "index": 8,
+                "selected": false
+            },
+            {
+                "count": 9,
+                "min": 100,
+                "text": "100 - 170",
+                "in_content": "product",
+                "max": 170,
+                "id": "facet_ideyJtYXgiOjE3MCwibWluIjoxMDB9",
+                "index": 9,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "number_of_products": 203,
+        "display_name": "Size",
+        "value": [
+            {
+                "count": 110,
+                "text": "00 (0/2-XS)",
+                "id": "facet_idMDAgKDAvMi1YUyk=",
+                "in_content": "product"
+            },
+            {
+                "count": 88,
+                "text": "3 (16/18-XL)",
+                "id": "facet_idMyAoMTYvMTgtWEwp",
+                "in_content": "product"
+            },
+            {
+                "count": 85,
+                "text": "1 (8/10-M)",
+                "id": "facet_idMSAoOC8xMC1NKQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 81,
+                "text": "0 (4/6-S)",
+                "id": "facet_idMCAoNC82LVMp",
+                "in_content": "product"
+            },
+            {
+                "count": 79,
+                "text": "2 (12/14-L)",
+                "id": "facet_idMiAoMTIvMTQtTCk=",
+                "in_content": "product"
+            },
+            {
+                "count": 79,
+                "text": "4 (20/22-XXL)",
+                "id": "facet_idNCAoMjAvMjItWFhMKQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 29,
+                "text": "1 (8-M)",
+                "id": "facet_idMSAoOC1NKQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 29,
+                "text": "2 (12-L)",
+                "id": "facet_idMiAoMTItTCk=",
+                "in_content": "product"
+            },
+            {
+                "count": 27,
+                "text": "0 (4-S)",
+                "id": "facet_idMCAoNC1TKQ==",
+                "in_content": "product"
+            },
+            {
+                "count": 23,
+                "text": "3 (16-XL)",
+                "id": "facet_idMyAoMTYtWEwp",
+                "in_content": "product"
+            }
+        ],
+        "facetType": "sizes",
+        "values": [
+            {
+                "count": 110,
+                "text": "00 (0/2-XS)",
+                "id": "facet_idMDAgKDAvMi1YUyk=",
+                "in_content": "product",
+                "index": 0,
+                "selected": false
+            },
+            {
+                "count": 88,
+                "text": "3 (16/18-XL)",
+                "id": "facet_idMyAoMTYvMTgtWEwp",
+                "in_content": "product",
+                "index": 1,
+                "selected": false
+            },
+            {
+                "count": 85,
+                "text": "1 (8/10-M)",
+                "id": "facet_idMSAoOC8xMC1NKQ==",
+                "in_content": "product",
+                "index": 2,
+                "selected": false
+            },
+            {
+                "count": 81,
+                "text": "0 (4/6-S)",
+                "id": "facet_idMCAoNC82LVMp",
+                "in_content": "product",
+                "index": 3,
+                "selected": false
+            },
+            {
+                "count": 79,
+                "text": "2 (12/14-L)",
+                "id": "facet_idMiAoMTIvMTQtTCk=",
+                "in_content": "product",
+                "index": 4,
+                "selected": false
+            },
+            {
+                "count": 79,
+                "text": "4 (20/22-XXL)",
+                "id": "facet_idNCAoMjAvMjItWFhMKQ==",
+                "in_content": "product",
+                "index": 5,
+                "selected": false
+            },
+            {
+                "count": 29,
+                "text": "1 (8-M)",
+                "id": "facet_idMSAoOC1NKQ==",
+                "in_content": "product",
+                "index": 6,
+                "selected": false
+            },
+            {
+                "count": 29,
+                "text": "2 (12-L)",
+                "id": "facet_idMiAoMTItTCk=",
+                "in_content": "product",
+                "index": 7,
+                "selected": false
+            },
+            {
+                "count": 27,
+                "text": "0 (4-S)",
+                "id": "facet_idMCAoNC1TKQ==",
+                "in_content": "product",
+                "index": 8,
+                "selected": false
+            },
+            {
+                "count": 23,
+                "text": "3 (16-XL)",
+                "id": "facet_idMyAoMTYtWEwp",
+                "in_content": "product",
+                "index": 9,
+                "selected": false
+            }
+        ]
+    }
+]
