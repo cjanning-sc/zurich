@@ -96,7 +96,7 @@ const config = {
         { name: 'state', analyzer: 'sitecore_standard', weight: 1 },
         { name: 'business_sector', analyzer: 'sitecore_standard', weight: 1 },
     ],
-    domainSuggestion: [{ name: 'name_context_aware' }],
+    domainSuggestion: [{ name: 'name_suggester' }],
     resultPerPageList: [10, 25, 50, 100],
     personalization: {
         fields: ['category', 'city'],
@@ -131,7 +131,7 @@ const SearchPage = () => {
                     {loading && <Loader logo={logo} />}
                 </SearchInputBar>
                 {!loading && !totalProducts && (<NoResult keyphrase={keyphrase} />)}
-                {suggestions.length > 0 && !totalProducts && (
+                {suggestions.length > 0 && (
                     <Suggestion
                         suggestions={suggestions}
                         suggestionClick={setKeyphrase}

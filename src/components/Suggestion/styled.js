@@ -22,7 +22,7 @@ export const SuggestionWrapperLabel = styled.span`
 `;
 
 export const SuggestionWrapperLi = styled.li`
-	background: ${(props) => props.theme?.backgroundColor || '#5548d9'};
+	background: blue;
 	border-radius: 8px;
 	border: none;
 	color: #fff;

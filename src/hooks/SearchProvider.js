@@ -136,7 +136,7 @@ export const SearchProvider = ({ domainConfig, children }) => {
 
       setAnswer(answer);
       setRelatedQuestions(related_questions.length && related_questions);      
-      setSuggestions((suggestion && suggestion.name_context_aware) || []);
+      setSuggestions((suggestion && suggestion.name_suggester) || []);
       setProducts(content);
       setTypes(types);
       setResults(content.length);
