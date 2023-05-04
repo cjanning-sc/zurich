@@ -99,7 +99,7 @@ const config = {
     domainSuggestion: [{ name: 'name_suggester' }],
     resultPerPageList: [10, 25, 50, 100],
     personalization: {
-        fields: ['category', 'city'],
+        fields: ['category', 'city', 'state', 'business_sector'],
     },
     domainEntity: 'content',
 };
