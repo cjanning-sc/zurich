@@ -56,7 +56,7 @@ const config = {
     domainFacetTypesList: ['category', 'business_sector', 'city', 'state', 'level', 'clearance', 'relocation', 'telecommute', 'job_shift', 'creation_month'],
     domainFacetTypesInfo: {
         category: {
-            text: 'Job Category',
+            text: 'Category',
         },
         city: {
             text: 'City',
@@ -68,7 +68,7 @@ const config = {
             text: 'Country',
         },
         level: {
-            text: 'Job Level',
+            text: 'Level',
         },
         clearance: {
             text: 'Clearance',
@@ -83,10 +83,10 @@ const config = {
             text: 'Relocation Eligible',
         },
         telecommute: {
-            text: 'Virtual Telecommute',
+            text: 'Telecommute',
         },
         job_shift: {
-            text: 'Job Shift',
+            text: 'Shift',
         }
     },
     domainRelevance: [
