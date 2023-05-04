@@ -67,7 +67,7 @@ const ArticleItem = ({ key, includeSku, className, onClick, ...product }, index)
 				<ArticleTitleWrapper style={{ width: '100%' }}>
 					<div style={{ float: 'right' }}>
 						<div className="LearnMore">
-							<a href={job_id} onClick={() => onClick(product)} className={'applyButton'} target={'_blank'} rel='noreferrer'>Learn More</a>
+							<a href={job_id} onClick={() => onClick(product)} className={'applyButton'} target={'_blank'} rel='noreferrer'>More Details</a>
 						</div>
 					</div>
 					<div>
