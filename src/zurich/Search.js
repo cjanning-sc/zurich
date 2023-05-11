@@ -1,29 +1,30 @@
 import { useContext } from "react";
 import { ThemeProvider } from 'styled-components';
-import { entityAppear, widgetClick } from '../../api/events';
-import Facet from "../../components/Facet";
-import Header from '../../components/Header';
-import Loader from '../../components/Loader';
-import logo from '../../components/Loader/images/sitecore.png';
-import ArticlesList from '../../components/jobdiscovery/ArticlesList';
-import BreadcrumFacet from '../../components/jobdiscovery/BreadcrumFacet';
-import NoResult from '../../components/jobdiscovery/NoResult';
-import Sort from '../../components/jobdiscovery/Sort';
-import Pagination from '../../components/Pagination';
-import QuerySummary from '../../components/QuerySummary';
-import ResultPerPage from '../../components/ResultPerPage';
-import SearchInput from '../../components/SearchInput';
-import { SearchCtx, SearchProvider } from '../../hooks/SearchProvider';
-import { Content, FacetsBar, PaginationContainer, SearchContainer, SearchInputBar, SearchResultHeader } from './styled';
-import Suggestion from "../../components/Suggestion";
+import { entityAppear } from '../api/events'
+import Facet from "../components/Facet";
+import Header from '../components/Header';
+import Loader from '../components/Loader';
+import logo from '../components/Loader/images/sitecore.png';
+import ArticlesList from '../components/zurich/ArticlesList';
+import BreadcrumFacet from '../components/zurich/BreadcrumFacet';
+import NoResult from '../components/zurich/NoResult';
+import Sort from '../components/zurich/Sort';
+import Pagination from '../components/Pagination';
+import QuerySummary from '../components/QuerySummary';
+import ResultPerPage from '../components/ResultPerPage';
+import SearchInput from '../components/SearchInput';
+import { SearchCtx, SearchProvider } from '../hooks/SearchProvider';
+import { Content, FacetsBar, PaginationContainer, SearchContainer, SearchInputBar, SearchResultHeader, SearchSeparator } from './styled';
+import Suggestion from "../components/Suggestion";
 
-import { HomeRecommendationProvider } from "../../hooks/RecommendationHomeProvider";
-import { RecommendationProvider } from "../../hooks/RecommendationProvider";
+import { HomeRecommendationProvider } from "../hooks/RecommendationHomeProvider";
+import { RecommendationProvider } from "../hooks/RecommendationProvider";
 
 const theme = {
-    headerColor: 'black',
+    headerColor: 'white',
+    headerFont: '#2167ae',
     backgroundColor: 'white',
-    filterColor: 'black',
+    filterColor: '#2167ae',
     filterFontSize: '18px',
     filterFontColor: '#fff',
     filterActionColor: '#c0b561',
@@ -42,69 +43,60 @@ const theme = {
 };
 
 const config = {
-    domainId: '76547973',
+    domainId: '73137685',
+    customerId: '89392734',
     rfkid: 'rfkid_7',
     domainResultPerPageDefault: 10,
-    domainSourceDefault: { value: '824079', label: 'Jobs' },
+    domainSourceDefault: { value: '833913', label: 'Zurich' },
     domainHighlightDefault: {
-        fields: ['name', 'category', 'city', 'business_sector', 'state'],
+        fields: ['name', 'description'],
         fragment_size: 100,
         pre_tag: '<b style="background-color:yellow">',
         post_tag: '</b>',
     },
     domainSortDefault: 'Recommended',
-    domainFacetTypesList: ['category', 'business_sector', 'city', 'state', 'level', 'clearance', 'relocation', 'telecommute', 'job_shift', 'creation_month'],
+    domainFacetTypesList: ['type', 'cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'month', 'status'],
     domainFacetTypesInfo: {
-        category: {
-            text: 'Category',
+        type: {
+            text: 'Type',
         },
-        city: {
-            text: 'City',
+        cat1: {
+            text: 'Subcategory 1',
         },
-        state: {
-            text: 'State',
+        cat2: {
+            text: 'Subcategory 2',
         },
-        country: {
-            text: 'Country',
+        cat3: {
+            text: 'Subcategory 3',
         },
-        level: {
-            text: 'Level',
+        cat4: {
+            text: 'Subcategory 4',
         },
-        clearance: {
-            text: 'Clearance',
+        cat5: {
+            text: 'Subcategory 5',
         },
-        creation_month: {
-            text: 'Created Month',
+        cat6: {
+            text: 'Subcategory 6',
         },
-        business_sector: {
-            text: 'Business Sector',
+        month: {
+            text: 'Modified Month',
         },
-        relocation: {
-            text: 'Relocation Eligible',
-        },
-        telecommute: {
-            text: 'Telecommute',
-        },
-        job_shift: {
-            text: 'Shift',
+        status: {
+            text: 'Status'
         }
     },
     domainRelevance: [
-        { name: 'name', analyzer: 'sitecore_standard', weight: 5 },
-        { name: 'category', analyzer: 'sitecore_standard', weight: 2 },
-        { name: 'city', analyzer: 'sitecore_standard', weight: 3 },
-        { name: 'state', analyzer: 'sitecore_standard', weight: 1 },
-        { name: 'business_sector', analyzer: 'sitecore_standard', weight: 1 },
+        { name: 'name', analyzer: 'sitecore_standard', weight: 5 }
     ],
-    domainSuggestion: [{ name: 'name_suggester' }],
+    domainSuggestion: [{ name: 'name_context_aware' }],
     resultPerPageList: [10, 25, 50, 100],
     personalization: {
-        fields: ['category', 'city', 'state', 'business_sector'],
+        fields: ['type', 'cat1', 'name'],
     },
     domainEntity: 'content',
 };
 
-function JobDiscoverySearchPage() {
+function ZurichSearchPage() {
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -131,15 +123,15 @@ const SearchPage = () => {
                     {loading && <Loader logo={logo} />}
                 </SearchInputBar>
                 {!loading && !totalProducts && (<NoResult keyphrase={keyphrase} />)}
-                {suggestions.length > 0 && (
+                {suggestions.length > 0 && !totalProducts && (
                     <Suggestion
                         suggestions={suggestions}
                         suggestionClick={setKeyphrase}
                     />
                 )}
+                {!loading && <SearchSeparator></SearchSeparator>}
                 {!loading && totalProducts > 0 && (
                     <FacetsBar>
-                        <div style={{ marginBottom: '10px', color: '#313a45', fontSize: '16px' }}>Job Filters:</div>
                         <div>
                             {types &&
                                 <Facet displayCount={true} />
@@ -167,7 +159,7 @@ const SearchPage = () => {
                                 loaded={!loading}
                                 loading={loading}
                                 onProductClick={(
-                                    { id, source_id, url, title, type, description, name, category, city, state },
+                                    { id, source_id, type, name, cat1, cat2 },
                                     index,
                                     products,
                                     currentPage
@@ -183,9 +175,9 @@ const SearchPage = () => {
                                                     id,
                                                     source_id,
                                                     name,
-                                                    category,
-                                                    city,
-                                                    state,
+                                                    cat1,
+                                                    cat2, 
+                                                    type,
                                                     entity_type: type !== 'products' ? 'content' : 'product',
                                                     entity_subtype: 'article',
                                                 },
@@ -213,8 +205,9 @@ const SearchPage = () => {
                         }
                     </Content>)}
             </SearchContainer>
+            <div style={{width:'100%',borderTop:'1px solid #cecece',height:'75px',backgroundColor:'#f6f6f6'}}></div>
         </div>
     );
 };
 
-export default JobDiscoverySearchPage;
+export default ZurichSearchPage;

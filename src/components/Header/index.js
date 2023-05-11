@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getConfigProperty, getUID, setConfig } from '../../utils/siteUtils';
 import { CopyIcon, RefreshIcon } from './icons';
-import acmeLogo from './images/acme.png'
+import logo from './images/zurich.svg'
 import { CopyButton, HeaderWrapper, LogoWrapper, RefreshButton, StyledLabel } from './styled';
 
 const Logo = () => {
@@ -9,11 +9,10 @@ const Logo = () => {
 		<LogoWrapper tabIndex="1">
 			<a href="/">
 				<img
-				src={acmeLogo}
+				src={logo}
 				tabIndex="-1"
 				alt={'ACME logo'}
 			/>
-				<div>ENGINEERING</div>
 			</a>
 		</LogoWrapper>
 	);
@@ -43,7 +42,7 @@ const Header = () => {
 	return (
 		<HeaderWrapper>
 			<Logo />
-			Career Discovery and Placement engine
+			Knowledge Discovery Center
 			<UUID />
 		</HeaderWrapper>
 	);

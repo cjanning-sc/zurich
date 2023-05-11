@@ -2,7 +2,7 @@ import { createContext, useCallback, useEffect, useState } from "react";
 import getSearch from "../api/search";
 import {
   getConfigProperty,
-  getLocaleData,
+  //getLocaleData,
   getUID,
   setConfig
 } from "../utils/siteUtils";
@@ -12,6 +12,7 @@ export const SearchCtx = createContext({});
 export const SearchProvider = ({ domainConfig, children }) => {
   const {
 		domainId,
+    customerId,
 		domainFacetTypesList,
 		domainRelevance,
 		domainResultPerPageDefault,
@@ -26,7 +27,8 @@ export const SearchProvider = ({ domainConfig, children }) => {
     domainEntity,
   } = domainConfig;
   if (getConfigProperty("customerKey") !== `156364153-${domainId}`) {
-    setConfig("customerKey", `156364153-${domainId}`);
+    //setConfig("customerKey", `156364153-${domainId}`);
+    setConfig("customerKey", `${customerId}-${domainId}`);
     if(!getUID().includes(domainId)) {
       setConfig("userId", getUID(1));
     }
@@ -34,7 +36,7 @@ export const SearchProvider = ({ domainConfig, children }) => {
   setConfig(
 		'eventsApiDomain',
 //    `https://events-api.staging.rfksrv.com${getConfigProperty('eventsPath')}${getConfigProperty('customerKey')}`
-    `https://discover.sitecorecloud.io/event/${getConfigProperty('customerKey')}/v4/publish`
+    `https://discover-euc1.sitecorecloud.io/event/${getConfigProperty('customerKey')}/v4/publish`
     //`https://events-api.staging.rfksrv.com/event/v4/publish/${getConfigProperty('customerKey')}`
   );
   const [sort, setSort] = useState({
@@ -136,7 +138,7 @@ export const SearchProvider = ({ domainConfig, children }) => {
 
       setAnswer(answer);
       setRelatedQuestions(related_questions.length && related_questions);      
-      setSuggestions((suggestion && suggestion.name_suggester) || []);
+      setSuggestions((suggestion && suggestion.name_context_aware) || []);
       setProducts(content);
       setTypes(types);
       setResults(content.length);

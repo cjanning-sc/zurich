@@ -1,0 +1,58 @@
+.LeftCol {
+    width: 200px;
+    height: 150px;
+    display: flex;
+}
+
+.LeftCol img {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    list-style: none;
+    color: #23366f;
+    cursor: pointer;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    width: 100%;
+    height: auto;
+    padding-right: 24px;
+}
+
+.even {
+    background-color: #edf1f9;
+}
+
+.odd {
+    background-color: #fff;
+}
+
+.fieldTitle {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    list-style: none;
+    box-sizing: inherit;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+    color: #23366f;
+    font-family: "ZurichSans-Light",Arial,sans-serif;
+    display: block;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 20px;
+    line-height: 32px;
+}

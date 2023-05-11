@@ -16,9 +16,9 @@ const getArticleImg = (type) => {
   return imgLookup[type] || article;
 };
 
-const ArticleType = ({type}) => (
+const ArticleType = ({ type }) => (
   <ArticleIcon>
-    <img src={getArticleImg(type)} />
+    <img src={getArticleImg(type)} alt='Article' />
   </ArticleIcon>
 );
 

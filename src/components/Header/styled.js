@@ -6,13 +6,13 @@ export const HeaderWrapper = styled.div`
     width: 100%;
     align-items: center;
     z-index: 999998;
-    height: 125px;
+    height: 100px;
     background-color: ${props => props.theme.headerColor};
     box-shadow: 0 1px 3px #999;
     display: flex;
     column-gap: 20px;
     justify-content: space-evenly;    
-    color: white;
+    color: ${props => props.theme.headerFont};
     font-weight: 700;
     font-size: 30px;
     text-align: left
@@ -28,7 +28,7 @@ export const LogoWrapper = styled.div`
     font-family: Helvetica;
     font-size: 16px;
     img {
-        height: 90px;
+        height: 32px;
     }
 `
 

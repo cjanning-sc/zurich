@@ -14,7 +14,7 @@ const QuerySummary = ({ resultsPerPage, totalResults, time, currentPage, display
         <MainQuerySummary>
           <span>Showing <SummaryHighlight>{showResultFrom}</SummaryHighlight> to
             <SummaryHighlight> {showResultTo < totalResults  ? showResultTo : totalResults} </SummaryHighlight>
-            from <SummaryHighlight>{totalResults} </SummaryHighlight> jobs
+            from <SummaryHighlight>{totalResults} </SummaryHighlight> results
             {displayTime && (<> in <SummaryHighlight>{time} </SummaryHighlight> milliseconds.</>)}
           </span>
         </MainQuerySummary>

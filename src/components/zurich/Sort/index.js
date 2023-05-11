@@ -33,12 +33,8 @@ export const Sort = () => {
         { value: '', label: 'Recommended', displayIcon: false },
         { value: 'title_asc', label: 'Title ASC', displayIcon: true },
         { value: 'title_desc', label: 'Title DESC', displayIcon: true },
-        { value: 'created_asc', label: 'Created ASC', displayIcon: true },
-        { value: 'created_desc', label: 'Created DESC', displayIcon: true },
-        { value: 'minimum_pay_asc', label: 'Minimum Pay ASC', displayIcon: true },
-        { value: 'minimum_pay_desc', label: 'Minimum Pay DESC', displayIcon: true },
-        { value: 'maximum_pay_asc', label: 'Maximum Pay ASC', displayIcon: true },
-        { value: 'maximum_pay_desc', label: 'Maximum Pay DESC', displayIcon: true }
+        { value: 'modified_asc', label: 'Modified ASC', displayIcon: true },
+        { value: 'modified_desc', label: 'Modified DESC', displayIcon: true },
     ];
 
     useNonInitialEffect(() => {

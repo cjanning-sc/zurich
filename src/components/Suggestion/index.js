@@ -8,7 +8,7 @@ const Suggestion = ({ suggestions, suggestionClick }) => {
   return (
     <SuggestionWrapper>
       <SuggestionWrapperLabel>People also searched for:</SuggestionWrapperLabel>
-      <ul>
+      <ul style={{marginTop:'10px'}}>
         {suggestions.map(({ text }, index) => (          
           <SuggestionWrapperLi key={index}>
             <a href="#" onClick={() => suggestionClick(text)}>{text}</a>

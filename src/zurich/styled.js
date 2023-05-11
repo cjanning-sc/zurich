@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const SearchSeparator = styled.div`
+    grid-area: separator;
+    
+    width: 100%;
+    margin-top: 10px;
+`
+;
+
 export const SortOptions = styled.div`
   display: inline-flex;
   float: right;
@@ -16,17 +24,18 @@ export const SortOptions = styled.div`
 export const SearchContainer = styled.div`
     display: grid;
     grid-template-columns: 0.6fr 1.44fr;
-    
     grid-template-rows: min-content 1fr;
-    gap: 0px 20px;
+    gap: 0px 0px;
     grid-auto-flow: row;
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 16%;
+    margin-right: 16%;
+
     justify-items: center; 
     align-items: center; 
 
     grid-template-areas:
         "searchbar searchbar"
+        "separator separator"
         "noresults noresults"
         "suggestions suggestions"
         "relatedquestions relatedquestions"
@@ -92,7 +101,8 @@ export const FacetsBar = styled.div`
     justify-self: end; 
     align-self: start;
     width: 100%;
-    margin-top: 20px;
+    border-top: 2px solid #cecece;
+    padding-right: 25px;
 `;
 
 export const FacetsBar1 = styled.div`
@@ -104,7 +114,10 @@ export const Content = styled.div`
     justify-self: start; 
     align-self: start;
     width: 100%;
-    margin-top: 20px;
+    border-left: 2px solid #cecece;
+    background: #f6f6f6;
+    padding: 25px;
+    border-top: 2px solid #cecece;
 `;
 
 export const PaginationContainer = styled.div`
@@ -114,7 +127,6 @@ export const PaginationContainer = styled.div`
 `;
 
 export const SearchResultHeader = styled.div`
-    box-shadow: 0 -1px 0 0 #bcc3ca inset;
     display: flex;
     justify-content: space-between;
     min-height: 30px;

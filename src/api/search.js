@@ -53,7 +53,7 @@ export const getSearch = (env, domainId, rfkid, params = {}) => {
 		page = 0,
 		highlight = {},
 		locale,
-		sources,
+		//sources,
 		sort,
 		suggestion = [],
 		resultPerPage = RESULTS_PER_PAGE,
@@ -93,8 +93,9 @@ export const getSearch = (env, domainId, rfkid, params = {}) => {
 	return axios({
 		//url: `https://api-${env}.rfksrv.com/${domainId}/v2/discover/search-rec`,
 		//url: `https://api.rfksrv.com/${domainId}/v2/discover/search-rec`,
-		url: `https://discover.sitecorecloud.io/discover/v2/${domainId}`,
+		url: `https://discover-euc1.sitecorecloud.io/discover/v2/${domainId}`,
 		method: 'post',
+		withCredentials: false,
 		data: merge(
 			{},
 			{

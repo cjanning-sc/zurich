@@ -51,9 +51,7 @@ const ArticleItem = ({ includeSku, className, onClick, ...product }) => {
           {
             file_type && file_type === 'pdf' && 
             (<><ArticleFileTypeBubble>{file_type}</ArticleFileTypeBubble><DownloadWrapper href={url}><FaArrowDown></FaArrowDown></DownloadWrapper></>)
-          }
-
-          
+          }          
 				</h2>
 			</ArticleItemTitle>
 			{subtitle && <ArticleSubtitle>{subtitle}</ArticleSubtitle>}

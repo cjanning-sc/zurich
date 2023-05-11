@@ -2,7 +2,7 @@ import axios from "axios";
 import { getConfigProperty } from '../utils/siteUtils';
 
 const HEADERS = {
-    'Authorization': '01-d3350bf4-a42848200c897a35a251b3db3ad8915e96b7a5bb',
+    'Authorization': '01-76e15934-9b6eb1e5bc814f3f35bb8f6819d52ea8aef5ee46',
     'Content-Type': 'application/json'
 },
     CONTEXT = {

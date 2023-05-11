@@ -34,84 +34,72 @@ const ArticleDate = ({ children }) => {
 
 const convertTitleToString = (value) => value.join(" ");
 
-const getPayRange = (min, max) => {
-	if (min && max) {
-		if (min < 1000 || max < 1000) {
-			return '';
-		} else {
-			return '$' + min.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' - $' + max.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-		}
+const shortenDescription = (value) => {
+	let desc = value;
+	if (value.length > 300) {
+		desc = value.substring(0, 300) + '...';
 	}
-};
+	return desc;
+}
 
 const ArticleItem = ({ key, includeSku, className, onClick, ...product }, index) => {
 	const {
 		id,
+		url,
 		job_id,
-		creation_date,
+		last_modified,
 		name,
-		category,
-		job_url,
-		city,
-		state,
-		country,
+		cat1,
+		type,
+		image_url,
 		highlight,
-		pay_minimum,
-		pay_maximum,
-		business_sector
+		description
 	} = product;
 
 	return (
 		<ArticleItemWrapper>
 			<ArticleContentWrapper>
-				<ArticleTitleWrapper style={{ width: '100%' }}>
-					<div style={{ float: 'right' }}>
-						<div className="LearnMore">
-							<a href={job_id} onClick={() => onClick(product)} className={'applyButton'} target={'_blank'} rel='noreferrer'>More Details</a>
-						</div>
-					</div>
-					<div>
-						<a
-							href={job_id}
-							alt={name}
-							onClick={() => onClick(product)}
-							target="_blank"
-							rel="noreferrer"
-						>
-							{' '}
-							{highlight && highlight.name
-								? parse(convertTitleToString(highlight.name))
-								: name}{''}
-						</a>
-					</div>
-				</ArticleTitleWrapper>
-				<table cellSpacing='0' cellPadding={3} width='100%'>
+				<table cellSpacing='' width='100%'>
 					<tbody>
 						<tr>
-							<td>{creation_date && <ArticleDate style={{ textAlign: 'right', width: '100%' }}>{new Date(creation_date).toLocaleDateString('en-US')}</ArticleDate>}</td>
-							<td rowSpan={2}></td>
-						</tr>
-						<tr>
-							<td>{category &&
-								<ArticleLocationWrapper style={{ fontWeight: 'bold' }}>
-									{highlight && highlight.category
-										? parse(convertTitleToString(highlight.category))
-										: category}{''}
-								</ArticleLocationWrapper>}
+							{image_url &&
+								<td rowSpan={2}>
+									<div className="LeftCol">
+										<img src={image_url} alt={job_id} />
+									</div>
+								</td>
+							}
+							<td style={{paddingLeft:'10px'}}>
+								<div className="fieldTitle">
+									<a
+										href={url}
+										alt={name}
+										onClick={() => onClick(product)}
+										target="_blank"
+										rel="noreferrer"
+									>
+										{' '}
+										{highlight && highlight.name
+											? parse(convertTitleToString(highlight.name))
+											: name}{''}
+									</a>
+								</div>
 							</td>
 						</tr>
-						<tr>
-							<td>{business_sector && (<ArticleLocationWrapper>{highlight && highlight.business_sector
-								? parse(convertTitleToString(highlight.business_sector))
-								: business_sector}{''}</ArticleLocationWrapper>)}</td>
-							<td style={{ textAlign: 'right', color: '#6f6f6f' }}>{highlight && highlight.city
-								? parse(convertTitleToString(highlight.city))
-								: city}{''}, {highlight && highlight.state
-									? parse(convertTitleToString(highlight.state))
-									: state}{' '}</td>
-						</tr>
+						{description &&
+							<tr>
+								<td style={{paddingLeft:'10px'}}>
+									{' '}
+										{highlight && highlight.description
+											? shortenDescription(parse(convertTitleToString(highlight.description)))
+											: shortenDescription(description)}{''}
+								</td>
+							</tr>
+						}
 					</tbody>
 				</table>
+				{type && <div style={{ width: '50%', float: 'left', marginTop: '20px' }}><b>Type:&nbsp;</b>{type}</div>}
+				{cat1 && <div style={{ width: '50%', textAlign: 'right', float: 'right', marginTop: '20px' }}><b>Subcategory:&nbsp;</b>{cat1}</div>}
 			</ArticleContentWrapper>
 			{/* <RecommendationContainer id={id} /> */}
 		</ArticleItemWrapper>

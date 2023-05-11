@@ -4,16 +4,22 @@ export const ArtileListWrapper = styled.ul`
     color: #313a45;
     font-size: 15px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-left: -40px;
+
+
 `;
 
 export const ArticleItemWrapper = styled.li`
     align-items: flex-start;
-    border-bottom: 1px dashed #ccc;
+
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    margin-bottom: 30px;
+
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .5s;
+    border: 1px solid #e1e1e1;
 `;
 
 export const ArticleImageWrapper = styled.div`
@@ -25,6 +31,7 @@ export const ArticleImageWrapper = styled.div`
 
 export const ArticleContentWrapper = styled.div`
     width: 100%;
+    padding: 20px;
 `;
 
 export const ArticleTitleWrapper = styled.div`

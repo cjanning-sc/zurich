@@ -7,7 +7,7 @@ export const getRecommendation = (env, domainId, rfkid, params = {}, config = {}
     entity, 
     rfkFlags,
     recommendations,
-    sources,
+    //sources,
     locale,
     contentId, 
   } = params;
@@ -16,7 +16,7 @@ export const getRecommendation = (env, domainId, rfkid, params = {}, config = {}
   return axios({
 		//url: `https://api-${env}.rfksrv.com/${domainId}/v2/discover/search-rec`,
 		//url: `https://api.rfksrv.com/${domainId}/v2/discover/search-rec`,
-		url: `https://discover.sitecorecloud.io/discover/v2/${domainId}`,
+		url: `https://discover-euc1.sitecorecloud.io/discover/v2/${domainId}`,
 		method: 'post',
 		data: merge(
 			{},

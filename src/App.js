@@ -1,6 +1,4 @@
-import SearchPage from './pages/jobdiscovery/Search';
-import ArticlePage from './pages/article/Article';
-import AffinityScorecard from './components/AffinityScorecard';
+import SearchPage from './zurich/Search';
 
 import {
   BrowserRouter as Router,
@@ -21,10 +19,8 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path="/" exact element={<SearchPage />} />
-          <Route path="/:id" element={<ArticlePage />} />
         </Routes>
       </div>
-      <AffinityScorecard />
     </Router>
   );
 }
