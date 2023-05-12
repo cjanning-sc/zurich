@@ -28,9 +28,6 @@ function AffinityScorecard() {
     const [errStyle, setErrStyle] = useState('');
 
     useEffect(() => {
-        //getProfile();
-        console.log("useEffect()");
-        //return () => clearTimeout(getProfile())
     }, []);
 
     function getProfile() {
@@ -58,10 +55,10 @@ function AffinityScorecard() {
                     })
                 };
 
-                fetch(`https://data-user-profile.prod.rfksrv.com/user-profile/v4/` + domain, requestOptions)
+                fetch(`https://data-user-profile.prod-euc1.rfksrv.com/user-profile/v4/` + domain, requestOptions)
                     .then(response => response.json())
                     .then((data) => {
-                        //console.log(data);
+                        console.log(data);
                         setUserProfile(data);
                         setAffinities(buildAffinities(data));
                         setKeywords(buildKeywords(data));
@@ -102,7 +99,7 @@ function AffinityScorecard() {
     }
 
     function buildKeywords(data) {
-        if (data.entities) {
+        if (data.entities[0].keyword.sp) {
             const keyword = Object.entries(data.entities[0].keyword.sp);
             var keywords = [];
             if (keyword) {

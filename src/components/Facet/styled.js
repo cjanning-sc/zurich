@@ -13,6 +13,7 @@ export const TypeParent = styled.div`
 export const TypeHeader = styled.div`
     position: sticky;
     top: 0;
+    height: 60px;
 
     background-color: ${props => props.theme.filterColor};
     color: ${props => props.theme.filterFontColor};

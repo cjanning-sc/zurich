@@ -4,7 +4,7 @@ export const SearchSeparator = styled.div`
     grid-area: separator;
     
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
 `
 ;
 
@@ -103,6 +103,7 @@ export const FacetsBar = styled.div`
     width: 100%;
     border-top: 2px solid #cecece;
     padding-right: 25px;
+    padding-top: 15px;
 `;
 
 export const FacetsBar1 = styled.div`

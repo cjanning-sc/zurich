@@ -7,7 +7,7 @@ export const getArticle = (domainId, rfkid, id) => {
     let content = {}, entity;
 
     return axios({
-        url: `https://discover.sitecorecloud.io/discover/v2/${domainId}`,
+        url: `https://discover-euc1.sitecorecloud.io/discover/v2/${domainId}`,
         method: 'post',
         data: merge(
             {},
