@@ -1,5 +1,2 @@
-# ACME Engineering Job Discovery
+# Zurich Knowledge Discovery Center
 Powered by Sitecore Search
-# zurich
-# zurich
-# zurich
